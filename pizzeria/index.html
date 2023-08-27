@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pizzería Las Delicias</h1>
+        <img class="logo" src="imagenes/logo.jpg">
+    </header>
+    <center><h2>Menú de Pizzas</h2></center>
+    <section class="menu">
+        <div class="pizza">
+            <img src="imagenes/pizza1.png" alt="Pizza 5 carnes">
+            <h3>Pizza 5 Carnes</h3>
+            <p>Tomate, mozzarella, </p>
+            <p>carnes, jamon, pepperoni.</p>
+            <p class="price">Q60.00</p>
+            <button class="add-to-cart" data-pizza="5 carnes">Agregar al carrito</button>
+        </div>
+        <div class="pizza">
+            <img src="imagenes/pizza2.png" alt="Pizza Hawaiana">
+            <h3>Pizza Hawaiana</h3>
+            <p>Tomate, mozzarella, jamon, piña.</p>
+            <p class="price">Q60.00</p>
+            <button class="add-to-cart" data-pizza="Hawaiana">Agregar al carrito</button>
+        </div>
+        <div class="pizza">
+            <img src="imagenes/pizza3.jpg" alt="Pizza Jamon">
+            <h3>Pizza de Jamon</h3>
+            <p>Tomate, mozzarella, Jamon.</p>
+            <p class="price">Q50.00</p>
+            <button class="add-to-cart" data-pizza="Jamon">Agregar al carrito</button>
+        </div>
+        <div class="pizza">
+            <img src="imagenes/pizza4.png" alt="Pizza Pepperoni">
+            <h3>Pizza de Pepperoni</h3>
+            <p>Tomate, mozzarella, pepperoni.</p>
+            <p class="price">Q50.00</p>
+            <button class="add-to-cart" data-pizza="Pepperoni">Agregar al carrito</button>
+        </div>
+        <!-- Agrega más pizzas aquí -->
+    </section>
+
+    <section class="cart">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items">
+            <!-- Los elementos del carrito se agregarán aquí dinámicamente con JavaScript -->
+        </ul>
+        <p class="total">Total: Q<span id="cart-total">0.00</span></p>
+        <button id="checkout">Pagar</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
